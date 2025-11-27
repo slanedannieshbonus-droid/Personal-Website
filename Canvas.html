@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finn the Human Canvas</title>
+</head>
+<body style="display:flex; justify-content:center; align-items:center; height:100vh; background-color:#A7D8F0;">
+  <canvas id="finnCanvas" width="400" height="400"></canvas>
+  <script>
+    const canvas = document.getElementById('finnCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Hat - main white part
+    ctx.fillStyle = '#FFFFFF';
+    ctx.beginPath();
+    ctx.moveTo(100, 180);
+    ctx.quadraticCurveTo(200, 50, 300, 180); // top curve of hat
+    ctx.lineTo(300, 280);
+    ctx.quadraticCurveTo(200, 300, 100, 280); // bottom curve
+    ctx.closePath();
+    ctx.fill();
+    ctx.strokeStyle = '#000000';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Head (face inside the hat)
+    ctx.fillStyle = '#FFE0BD';
+    ctx.beginPath();
+    ctx.arc(200, 220, 60, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    // Eyes
+    ctx.fillStyle = '#000000';
+    ctx.beginPath();
+    ctx.arc(180, 210, 8, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(220, 210, 8, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.closePath();
+
+    // Smile
+    ctx.strokeStyle = '#000000';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(200, 230, 25, 0, Math.PI, false);
+    ctx.stroke();
+    ctx.closePath();
+
+    // Ears (on hat)
+    ctx.fillStyle = '#FFFFFF';
+    ctx.beginPath();
+    ctx.arc(120, 140, 25, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(280, 140, 25, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    // Small shadow under hat for depth
+    ctx.fillStyle = 'rgba(0,0,0,0.05)';
+    ctx.beginPath();
+    ctx.arc(200, 250, 55, 0, Math.PI, true);
+    ctx.fill();
+  </script>
+</body>
+</html>
+
+
+
+
