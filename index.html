@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lane Danniesh R. Bonus - My Personal Website</title>
+
+  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f6fa;
+            color: #333;
+        }
+
+
+        nav {
+            width: 100%;
+            padding: 20px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            background: #ffffffd9;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 100;
+            flex-wrap: wrap;
+        }
+
+        nav .logo {
+            font-weight: 600;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        nav .nav-links {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 12px;
+            margin-left: 20px;
+            flex-shrink: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: color 0.3s;
+        }
+
+        nav a.active {
+            color: #000;
+            font-weight: 700;
+        }
+
+        @media (max-width: 900px) {
+            nav a {
+                font-size: 14px;
+            }
+        }
+
+        .hero {
+            margin-top: 80px;
+            padding: 100px 20px;
+            text-align: center;
+            background: #ffffff;
+        }
+
+        .hero img {
+            width: 280px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin: 10px 0;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color: #666;
+        }
+
+
+        section {
+            background: white;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            scroll-margin-top: 100px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+        }
+
+        ul.skills-list li {
+            font-size: 20px;
+            padding: 5px 0;
+        }
+
+        .gallery img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: #777;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 20px;
+            color: #444;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Lane Bonus</div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#summary">Professional Summary</a>
+            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#favorites">Favorites</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+    </nav>
+
+
+    <div class="hero" id="home">
+        <img src="lanephoto.jpg" alt="Lane Photo">
+        <h1>Welcome!</h1>
+        <p>I am Lane, born and raised in Cavite. I am a student who loves creating digital projects and expressing creativity in my own way.</p>
+
+        <br><br>
+
+        <h2>About Me</h2>
+        <p><strong>Full Name:</strong> Lane Danniesh R. Bonus</p>
+        <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+        <p><strong>Year:</strong> 3rd Year</p>
+        <p><strong>Birthday:</strong> September 21, 2005</p>
+        <p><strong>Age:</strong> 20</p>
+
+
+        <div class="quote">
+            "I am a late bloomer, but I bloom beautifully in my own time."
+        </div>
+    </div>
+
+
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>
+            Motivated and detail-oriented individual currently pursuing a Bachelor of Science in Information Technology. 
+            Passionate about solving technical problems, learning new technologies, and contributing to innovative digital solutions. 
+            Eager to grow in the IT industry and collaborate with dynamic teams.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> 09603065830</p>
+        <p><strong>Email:</strong> 
+            <a href="mailto:Bonuslanedanniesh@gmail.com">Bonuslanedanniesh@gmail.com</a>
+        </p>
+    </section>
+
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+            <li>Communication Skills</li>
+            <li>Computer Skills</li>
+            <li>Coding Skills</li>
+            <li>Leadership / Teamwork</li>
+        </ul>
+    </section>
+
+   
+    <section id="achievements">
+        <h2>Achievements as an IT Student</h2>
+        <ul>
+            <li>Completed Java course</li>
+            <li>Created a Hotel Reservation System</li>
+            <li>Earned certificates in IT</li>
+            <li>Cisco Networking Basics Certificate</li>
+            <li>Sylor Certificate's</li>
+            <li>Dean’s List – 2023</li>
+        </ul>
+    </section>
+
+ 
+    <section id="favorites">
+        <h2>My Favorites</h2>
+        <p><strong>Food:</strong> Adobo</p>
+        <p><strong>Color:</strong> Pink</p>
+        <p><strong>Artist:</strong> Ben&Ben</p>
+        <p><strong>Game:</strong> Hay Day</p>
+        <p><strong>Hobby:</strong> Ukalele</p>
+        <p><strong>Place:</strong> Cavite</p>
+    </section>
+
+
+    <section id="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="childhood.jpg">
+            <img src="current.jpg">
+            <img src="Lanevb.jpg">
+            <img src="Lanemodel.jpg">
+            <img src="Lanedl.jpg">
+            <img src="Lanexander.jpg">
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Lane Danniesh R. Bonus | My Personal Website
+    </footer>
+
+
+    <script>
+        const sections = document.querySelectorAll('section, .hero');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
